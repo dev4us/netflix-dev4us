@@ -1,5 +1,5 @@
 import React from "react";
-import HomePresenter from "./HomePresenter";
+import DetailPresenter from "./DetailPresenter";
 
 export default class extends React.Component {
   state = {
@@ -9,6 +9,6 @@ export default class extends React.Component {
   };
   render() {
     const { result, error, loading } = this.state;
-    return <HomePresenter result={result} error={error} loading={loading} />;
+    return <DetailPresenter result={result} error={error} loading={loading} />;
   }
 }

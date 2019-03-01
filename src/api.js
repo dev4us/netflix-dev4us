@@ -17,7 +17,7 @@ export const tvApi = {
   showDetail: id =>
     api.get(`tv/${id}`, { parms: { append_to_response: "videos" } }),
   search: term =>
-    api.get("search/tv/", { params: { query: encodeURIComponent(term) } })
+    api.get("search/tv", { params: { query: encodeURIComponent(term) } })
 };
 
 export const moviesApi = {
@@ -27,5 +27,5 @@ export const moviesApi = {
   movieDetail: id =>
     api.get(`/movie/${id}`, { parms: { append_to_response: "videos" } }),
   search: term =>
-    api.get("search/movie/", { params: { query: encodeURIComponent(term) } })
+    api.get("search/movie", { params: { query: encodeURIComponent(term) } })
 };
